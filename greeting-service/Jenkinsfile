@@ -6,7 +6,7 @@ pipeline{
             steps {
                 sh '''
                     oc project fhulvf-deploy-strategies
-                    oc start-build greeting-service --follow -wait
+                    oc start-build greeting-service --follow --wait
                 '''
             }
         }
